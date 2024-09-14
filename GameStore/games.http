@@ -1,0 +1,30 @@
+GET http://localhost:5253/games
+
+###
+GET http://localhost:5253/games/1
+
+###
+
+POST http://localhost:5253/games
+Content-Type: application/json
+
+{
+  "Name": "Minecraft",
+  "GenreId": 1,
+  "Price": 19.99,
+  "ReleaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5253/games/1
+Content-Type: application/json
+
+{
+  "Name": "GTA IV",
+  "GenreId": 5,
+  "Price": 22.55,
+  "ReleaseDate": "2011-09-17"
+}
+
+###
+DELETE http://localhost:5253/games/1
